@@ -38,34 +38,21 @@
   background-color: red;
 }
 
+
+.used-letter-add.used-letter-add-active,
+.used-letter-remove.used-letter-remove-active {
+  transition: all linear 0.25s;
+}
+
 .used-letter {
   opacity: 0.2;
 }
 
-.used-letter-add, .used-letter-remove {
-  -webkit-transition: all linear 0.15s;
-  transition: all linear 0.15s;
-  opacity: 1;  
+.wordarea.ng-hide-add.ng-hide-add-active,
+.wordarea.ng-hide-remove.ng-hide-remove-active {
+  transition: all linear 0.25s;
 }
 
-.used-letter-remove-active, {
-  opacity: 0.2;
-}
-
-.used-letter-add-active {
-  opacity: 0.2;
-}
-
-.wordarea.ng-hide-add, .wordarea.ng-hide-remove {
-  -webkit-transition: all linear 0.15s;;
-  transition: all linear .25s;
-  opacity: 1;  
-}
-
-.wordarea.ng-hide-remove-active, {
-  opacity: 0;
-}
-
-.wordarea.ng-hide-add-active {
+.wordarea.ng-hide {
   opacity: 0;
 }
