@@ -43,6 +43,7 @@
 }
 
 .used-letter-add, .used-letter-remove {
+  -webkit-transition: all linear 0.15s;
   transition: all linear 0.15s;
   opacity: 1;  
 }
@@ -56,6 +57,7 @@
 }
 
 .wordarea.ng-hide-add, .wordarea.ng-hide-remove {
+  -webkit-transition: all linear 0.15s;;
   transition: all linear .25s;
   opacity: 1;  
 }
