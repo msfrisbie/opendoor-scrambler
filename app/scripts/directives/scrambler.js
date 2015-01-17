@@ -4,8 +4,12 @@ angular.module('openDoorApp.directives.scrambler', [])
 .directive('scrambler', function($log, $timeout, Word) {
 
   function scrambleString(mystr) {
-    // taken from stackoverflow
-    return mystr.split('').sort(function(){return 0.5-Math.random()}).join('');
+    // adapted from stackoverflow
+    var newstr = mystr;
+    while (newstr === mystr) {
+      newstr = mystr.split('').sort(function(){return 0.5-Math.random()}).join('');
+    }
+    return newstr;
   }
 
   return {
