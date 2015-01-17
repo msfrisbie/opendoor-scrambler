@@ -3,6 +3,7 @@
 angular.module('openDoorApp')
 .controller('MainCtrl', function ($scope) {
   $scope.captureKey = function(event) {
+    event.preventDefault();
     if (event.keyCode == 8) {
       // backspace
       $scope.$broadcast('backspace');
